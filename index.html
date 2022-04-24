@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/index.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        
+    <form class="gridForm" action="">
+        <div class="data">
+            <p class="block">
+                <label class="labelFor">INGRESAR NUMEROS HASTA 10</label>
+                <input 
+                    class="form-control"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    maxlength="10" 
+                    type="number" required 
+                />
+            </p>
+
+            <p class="block">
+                <label>NUMBER MAX 40</label>
+                <textarea 
+                class="form-control"
+                name="message" 
+                maxlength="40"></textarea>
+            </p>
+
+            <p class="block">
+                <label>NUMBER MAX 40</label>
+                <textarea 
+                class="form-control"
+                name="message" 
+                maxlength="40"></textarea>
+            </p>
+
+           
+
+            
+
+            <p class="block">
+                <label for="start">CAMPO FECHA</label>
+                <input 
+                type="date" 
+                class="form-control"
+                id="start" 
+                name="trip-start" 
+                value="2018-07-22" 
+                min="2018-01-01" 
+                max="2022-12-31" />
+            </p>
+
+            <p class="block">
+                <label for="hora">CAMPO HORA</label>
+                <input  class="form-control" type="time" name="hora" id="hora" />
+            </p>
+
+            <p class="block">
+                <label>CAMPO EMAIL</label>
+                <input 
+                type="email" 
+                class="form-control"
+                pattern=".+@globex\.com" 
+                placeholder="sophie@example.com" 
+                id="email" size="30"
+                    required>
+            </p>
+
+            <div class="block">
+                <label>SELECCIONAR UNA CASILLA</label>
+                <p class="switch-field">
+                    <input type="radio" id="radio-one" name="switch-one" value="Approve" checked />
+                    <label class="verde" for="radio-one">CASILLA 1</label>
+                    <input type="radio" id="radio-two" name="switch-one" value="Decline" />
+                    <label for="radio-two" class="rojo">CASILLA 2</label>
+                </p>
+            </div>
+
+            <div class="block">
+            <label for="casilla">SELECCIONAR 1 DE 3 OPCIONES</label>
+            <div class="">
+                <input type="radio" id="one" name="one" value="Approve" checked />
+                <label for="one">OPCION 1</label>
+                <input type="radio" id="two" name="one" value="Decline" />
+                <label for="two">OPCION 2</label>
+                <input type="radio" id="three" name="one" value="Decline22" />
+                <label for="three">OPCION 3</label>
+            </div>
+        </div>
+
+            <p class="block">
+                <label>CAMPO COLORES</label>
+                <input type="color">
+            </p>
+
+           
+
+            <p class="block">
+                <label>CAMPO LISTA DESPLEGABLE</label>
+                <select class="form-control" name="color" id="color">
+                    <option value="r">Rojo</option>
+                    <option value="a">Azul</option>
+                    <option value="v">Verde</option>
+                </select>
+            </p>
+
+            <p class="block">
+                <label>INPUT TYPE SEARCH</label>
+                <input class="form-control" type="search" name="busquedamusica" placeholder="Canción, autor, álbum...">
+            </p>
+
+            <p class="block">
+                <label>CAMPO LISTA VARIAS OPCIONES</label>
+                <select class="form-control2" name="combo" multiple>
+                    <!-- Formato alternativo con atributo label -->
+                    <optgroup label="Opciones básicas">
+                        <option value="1" label="Opcion 1"> </option>
+                    </optgroup>
+
+                    <optgroup label="Opciones avanzadas">
+                        <option value="2" label="Opcion 2"> </option>
+                        <option value="3" label="Opcion 3"> </option>
+                    </optgroup>
+                </select>
+            </p>
+
+            
+
+            <p class="block">
+                <label>MAX 200 3 ROWS</label>
+                <textarea class="form-control2" name="message" maxlength="200" rows="3"></textarea>
+            </p>
+        </div>
+
+    </form>
+    </div>
+
+
+</body>
+
+</html>
